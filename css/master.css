@@ -297,7 +297,12 @@ a {
   border: 2px solid transparent;
   margin-bottom: 5px;
 }
-/* line 33, ../scss/master.scss */
+/* line 32, ../scss/master.scss */
+.placeholder .draggable {
+  width: 400px;
+  height: 100px;
+}
+/* line 35, ../scss/master.scss */
 .placeholder .draggable .inner {
   width: 396px;
   height: 96px;
