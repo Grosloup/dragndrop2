@@ -22,3 +22,21 @@ a{
   text-decoration: none;
   outline: none;
 }
+
+.placeholder{
+  width: 400px;
+  height: 100px;
+  background-color: #eee;
+  border: 2px solid transparent;
+  margin-bottom: 5px;
+  .draggable{
+
+    .inner{
+      width: 396px;
+      height: 96px;
+      border: 1px solid #ddd;
+      background-color: #fff;
+      @include border-radius(5px);
+    }
+  }
+}

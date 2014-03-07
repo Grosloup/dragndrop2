@@ -288,3 +288,24 @@ a {
   text-decoration: none;
   outline: none;
 }
+
+/* line 26, ../scss/master.scss */
+.placeholder {
+  width: 400px;
+  height: 100px;
+  background-color: #eee;
+  border: 2px solid transparent;
+  margin-bottom: 5px;
+}
+/* line 33, ../scss/master.scss */
+.placeholder .draggable .inner {
+  width: 396px;
+  height: 96px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
