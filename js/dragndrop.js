@@ -8,7 +8,7 @@
     [].slice.call(drags).forEach(function(el, idx){
         /////////////////////////////////////////////
         el.addEventListener("dragstart", function(evt){
-            //this.classList.add("dragstart");
+            this.classList.add("dragstart");
             dragSrcElm = this;
             evt.dataTransfer.effectAllowed = "copy";
             evt.dataTransfer.setData("text", this.innerHTML);
@@ -59,7 +59,7 @@
         el.addEventListener("dragend", function(evt){
             [].slice.call(drags).forEach(function(el){
                 // el.parentNode.classList.remove("dragenter");
-                // el.classList.remove("dragstart");
+                el.classList.remove("dragstart");
             });
         }, false);
     });

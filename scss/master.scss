@@ -24,19 +24,30 @@ a{
 }
 
 .placeholder{
-  width: 400px;
+  width: 200px;
   height: 100px;
   background-color: #eee;
   border: 2px solid transparent;
   margin-bottom: 5px;
   .draggable{
-    width: 400px;
-    height: 100px;
+    // width: 400px;
+    // height: 100px;
+    width: 196px;
+    height: 96px;
+    border: 1px solid #ddd;
+    background-color: #ff8a56;
+    // @include border-radius(5px);
+    &.dragstart{
+
+      .inner{
+        @include opacity(0);
+      }
+    }
     .inner{
-      width: 396px;
-      height: 96px;
+      width: 194px;
+      height: 94px;
       border: 1px solid #ddd;
-      background-color: #fff;
+      //background-color: #fff;
       @include border-radius(5px);
     }
   }

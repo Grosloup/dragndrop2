@@ -291,7 +291,7 @@ a {
 
 /* line 26, ../scss/master.scss */
 .placeholder {
-  width: 400px;
+  width: 200px;
   height: 100px;
   background-color: #eee;
   border: 2px solid transparent;
@@ -299,15 +299,21 @@ a {
 }
 /* line 32, ../scss/master.scss */
 .placeholder .draggable {
-  width: 400px;
-  height: 100px;
-}
-/* line 35, ../scss/master.scss */
-.placeholder .draggable .inner {
-  width: 396px;
+  width: 196px;
   height: 96px;
   border: 1px solid #ddd;
-  background-color: #fff;
+  background-color: #ff8a56;
+}
+/* line 42, ../scss/master.scss */
+.placeholder .draggable.dragstart .inner {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+/* line 46, ../scss/master.scss */
+.placeholder .draggable .inner {
+  width: 194px;
+  height: 94px;
+  border: 1px solid #ddd;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
